@@ -1,0 +1,14 @@
+/* Responsive */
+@media (max-width: 700px) {
+  .chat-main {
+    display: block;
+  }
+
+  .chat-sidebar {
+    display: none;
+  }
+
+  .hamburgerButton {
+    display: block;
+  }
+}

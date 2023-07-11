@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css?family=Robot&display=swap");
+
+/* ffa31a */
+:root {
+  --dark-color-a: #667aff;
+  --dark-color-b: #7386ff;
+  --light-color: #e6e9ff;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+  --pColor: #ffa31a;
+  --light-black: #292929;
+  --main-grey: #808080;
+  --pDarkColor: rgb(200, 123, 20);
+  --whiteSmoke: #f5f5f5;
+  --yellowSecondary: #d7d2c1;
+  --pDarkGradient: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  --pLessDarkGradient: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+
+  --pLightGradient: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+
+  --pColorTranslucent: rgba(255, 163, 26, 0.3);
+  --time-color: rgb(150, 150, 150);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  /* height: 100%; */
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  /* background: var(--light-color); */
+  background: var(--light-black);
+  margin: 20px;
+  /* overflow-y: auto; */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* index.html page */
+.join-container {
+  max-width: 500px;
+  margin: 80px auto;
+  color: #fff;
+}
+
+.join-header {
+  text-align: center;
+  padding: 20px;
+  /* background: var(--dark-color-a); */
+  background: #000;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.whiteSpace {
+  white-space: pre-wrap;
+  /* max-width: fit-content; */
+  /* max-height: fit-content; */
+  /* margin: -1rem; */
+}
+
+.join-header h1 i {
+  /* color: var(--pColor); */
+}
+
+.join-header h1 span {
+  color: #000;
+  background-color: var(--pColor);
+}
+
+.join-main {
+  padding: 30px 40px;
+  /* background: var(--dark-color-b); */
+  background: var(--main-grey);
+}
+
+.join-main p {
+  margin-bottom: 20px;
+}
+
+.join-main .form-control {
+  margin-bottom: 20px;
+}
+
+.join-main input[type="text"] {
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+}
+
+.join-main select {
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+}
+
+.join-main .btn {
+  margin-top: 20px;
+  width: 100%;
+  /* background-color: var(--light-color); */
+  background-color: var(--light-black);
+  /* color: var(--dark-color-a); */
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.join-main .btn:hover {
+  transform: scale(1.02);
+  background-color: var(--pColor);
+  color: #000;
+  font-weight: bold;
+}
+
+/* chat.html page */
+.chat-container {
+  max-width: 1100px;
+  background-color: #fff;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.chat-header {
+  background-color: var(--pColor);
+  /* background-color: #000; */
+  /* filter: brightness(30%);
+   */
+
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.darken {
+  background-image: var(--pDarkGradient);
+}
+
+.chat-container {
+  /* max-height: 80%; */
+  max-height: 90%;
+  margin-top: 3rem;
+  /* overflow: auto; */
+}
+
+.chat-main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.chat-main {
+  /* max-height: 75%; */
+  /* overflow: auto; */
+}
+
+.chat-sidebar {
+  /* width: 25%; */
+  /* margin: 0;
+  display: inline-block; */
+  background: #946000;
+  background-color: var(--pColor);
+  background-image: var(--pLessDarkGradient);
+  color: #fff;
+  /* max-height: 60%; */
+
+  padding-left: 0.5rem;
+}
+
+.chat-sidebar h2 {
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.chat-sidebar h3 {
+  margin-bottom: 15px;
+}
+
+.chat-sidebar ul {
+  height: 50%;
+  overflow-y: auto;
+}
+
+.chat-sidebar ul li {
+  padding: 10px 0;
+}
+
+.chat-messages {
+  padding: 30px;
+  /* width: 65%;
+  display: inline-block;
+  margin: 0; */
+  max-height: 350px;
+  overflow-y: auto;
+  background-color: rgb(20, 20, 20);
+}
+
+.chat-messages .message,
+.sendMessage {
+  padding: 5px 10px;
+  width: fit-content;
+  max-width: 90%;
+  margin-bottom: 15px;
+  background-color: var(--pColorTranslucent);
+  /* background-image: var(--pLightGradient); */
+  border-radius: 5px;
+
+  color: var(--light-color);
+}
+
+.sendMessage {
+  margin-left: auto;
+  background-color: rgba(228, 255, 26, 0.3);
+}
+
+.chat-messages .message .meta,
+.chat-messages .sendMessage .meta {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--pColor);
+  opacity: 0.7;
+  margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span,
+.chat-messages .sendMessage .meta span {
+  color: var(--time-color);
+}
+
+.chat-form-container {
+  padding: 20px 30px;
+  /* background-color: var(--pDarkColor);
+   */
+  background-color: var(--pColor);
+}
+
+.chat-form-container form {
+  display: flex;
+}
+
+.chat-form-container #msg {
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  flex: 1;
+  background-color: var(--whiteSmoke);
+  background-color: #bbb9a0;
+  /* color: #fff; */
+  outline: none;
+}
+
+.chat-form-container .btn {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  /* background-color: var(--whiteSmoke); */
+  background-color: var(--yellowSecondary);
+  /* color: #fff; */
+  border: none;
+  padding: 0.5rem;
+}
+
+.chat-form-container .btn:hover {
+  transform: scale(1.05);
+}
+
+.chat-header .btn {
+  text-decoration: none;
+  color: var(--whiteSmoke);
+  color: black;
+  padding: 0.5rem;
+  background-color: var(--yellowSecondary);
+}
+
+/* gui modification */
+.GUI {
+  display: none;
+  background-color: var(--whiteSmoke);
+  flex-wrap: wrap;
+}
+
+.GUI > * {
+  margin: 0.6rem;
+  padding: 0.5rem;
+}
+
+.GUI > *:nth-child(odd) {
+  background-color: rgb(150, 150, 150, 0.5);
+}
+
+.guiLog {
+  background-color: #fff;
+  padding: 0.5rem;
+  margin: 1rem;
+  max-height: 250px;
+  overflow-y: auto;
+  display: none;
+}
+
+#toggleCustomization,
+#toggleDisplayLog {
+  margin: 1rem 0.5rem;
+  padding: 0.3rem;
+  background-color: var(--pColor);
+  border: none;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  display: block;
+}
+
+#toggleCustomization.active,
+#toggleDisplayLog.active {
+  background-color: var(--pDarkColor);
+  transition: all 0.4s ease-in-out;
+}
+
+.hamburgerButton {
+  display: none;
+  color: #f0f0f0;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.hamburgerButton:hover {
+  background-color: rgb(224, 224, 224, 0.3);
+}
+
+.hamburgerButton.selected {
+  color: #afacac;
+}

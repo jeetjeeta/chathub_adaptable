@@ -1,0 +1,12 @@
+Sem8
+1: Private chat feature(Chat(to everyone))or Chat(to someone))
+2: Meeting type: i) Open to anyone having password
+ii) Host have option to admit or not
+iii) Closed
+
+Sem7:
+Encryption of messages(Message encryption/decryption at client side)
+Create new room
+Have password
+use cookie to disable multiple users in same browser
+toggle sidebar for mobile
