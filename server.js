@@ -5,7 +5,7 @@ const { Server } = require("socket.io");
 const server = http.createServer(app);
 const io = new Server(server);
 const ngrok = require("ngrok");
-const PORT = 80 || process.env.PORT;
+const PORT = 8080 || process.env.PORT;
 
 
 const localtunnel = require('localtunnel');
